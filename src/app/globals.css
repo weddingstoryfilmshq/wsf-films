@@ -70,7 +70,7 @@ body::after {
 }
 
 /* =========================================================
-   Instagram Story Progress Ring
+   Instagram Story Ring
 ========================================================= */
 
 .story-progress-ring {
@@ -87,10 +87,32 @@ body::after {
   }
 }
 
-/* Respect users who prefer reduced motion */
+/* =========================================================
+   Instagram Story Top Progress Bars
+========================================================= */
+
+.story-progress-bar {
+  width: 0%;
+  animation: storyBar var(--story-duration) linear forwards;
+}
+
+@keyframes storyBar {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   Reduced Motion
+========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
-  .story-progress-ring {
+  .story-progress-ring,
+  .story-progress-bar {
     animation: none;
   }
 }
