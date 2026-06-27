@@ -22,13 +22,13 @@ export default function Footer() {
         muted
         loop
         playsInline
-        className="absolute inset-0 h-full w-full scale-125 object-cover blur-[8px] brightness-80"
+        className="absolute inset-0 h-full w-full scale-125 object-cover blur-[8px] brightness-90"
       >
         <source src="/videos/footer.mp4" type="video/mp4" />
       </video>
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/35" />
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/20" />
 
       {/* Content */}
       <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center px-8 py-16">
@@ -37,7 +37,7 @@ export default function Footer() {
         <Link href="/" className="mb-10">
           <Image
             src="/favicon.png"
-            alt="WSF"
+            alt="Wedding Story Films"
             width={58}
             height={58}
             priority
@@ -121,7 +121,7 @@ export default function Footer() {
         <div className="flex flex-wrap items-center justify-center gap-6 text-center">
 
           <p className="text-[11px] uppercase tracking-[0.25em] text-white/40">
-            © {new Date().getFullYear()} WSF
+            © {new Date().getFullYear()} Wedding Story Films
           </p>
 
           <span className="text-white/20">•</span>

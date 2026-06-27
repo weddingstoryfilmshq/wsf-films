@@ -68,3 +68,29 @@ body::after {
       rgba(120, 92, 48, 0.035) 100%
     );
 }
+
+/* =========================================================
+   Instagram Story Progress Ring
+========================================================= */
+
+.story-progress-ring {
+  animation: storyProgress var(--story-duration) linear forwards;
+}
+
+@keyframes storyProgress {
+  from {
+    stroke-dashoffset: var(--story-circumference);
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Respect users who prefer reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  .story-progress-ring {
+    animation: none;
+  }
+}

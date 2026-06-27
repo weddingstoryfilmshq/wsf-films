@@ -8,6 +8,8 @@ import { Moon } from "lucide-react";
 import Container from "@/components/ui/Container";
 import LanguageSelector from "@/components/LanguageSelector";
 import { navigation } from "@/data/navigation";
+import StoryRing from "@/components/StoryRing";
+import { storyImages } from "@/lib/storyImages";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -35,17 +37,12 @@ export default function Navbar() {
       <Container>
         <nav className="flex h-24 items-center justify-between">
 
-          {/* Logo */}
-          <Link href="/" className="shrink-0">
-            <Image
-              src="/favicon.png"
-              alt="WSF"
-              width={50}
-              height={50}
-              priority
-              className="h-12 w-auto transition-opacity duration-300 hover:opacity-80"
-            />
-          </Link>
+          {/* Story Logo */}
+<StoryRing
+  images={storyImages}
+  size={52}
+  duration={5000}
+/>
 
           {/* Navigation */}
           <ul className="hidden flex-1 justify-center gap-10 lg:flex">
