@@ -6,6 +6,7 @@ import {
   X,
   Volume2,
   VolumeX,
+  ExternalLink,
 } from "lucide-react";
 
 import StoryProgress from "./StoryProgress";
@@ -218,9 +219,20 @@ export default function StoryViewer({
           draggable={false}
           className="select-none object-cover"
         />
+        
+{/* Instagram Follow Button */}
+<a
+  href="https://www.instagram.com/weddingstoryfilmspt/"
+  target="_blank"
+  rel="noopener noreferrer"
+className="absolute bottom-[100px] left-1/2 z-30 flex -translate-x-1/2 items-center gap-2 rounded-full border border-white/20 bg-black/35 px-5 py-2.5 text-sm font-medium text-white backdrop-blur-md transition-all duration-300 hover:scale-105 hover:border-white/40 hover:bg-white/15"
+>
+  <ExternalLink size={18} />
+  <span>Follow @weddingstoryfilmspt</span>
+</a>
 
         {/* Top Overlay */}
-        <div className="pointer-events-none absolute inset-x-0 top-0 z-20 h-28 bg-gradient-to-b from-black/45 to-transparent" />
+        <div className="pointer-events-none absolute inset-x-0 top-0 z-20 h-28 bg-gradient-to-b from-black/20 to-transparent" />
 
         {/* Bottom Overlay */}
         <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-32 bg-gradient-to-t from-black/35 to-transparent" />
