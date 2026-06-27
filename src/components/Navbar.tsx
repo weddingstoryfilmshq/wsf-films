@@ -41,8 +41,7 @@ export default function Navbar() {
 <StoryRing
   images={storyImages}
   size={52}
-  duration={5000}
-/>
+  />
 
           {/* Navigation */}
           <ul className="hidden flex-1 justify-center gap-10 lg:flex">
