@@ -16,7 +16,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "WSF Films",
+  title: "WSF",
   description: "Luxury Wedding Photography & Cinematic Films",
   icons: {
     icon: "/favicon.png",

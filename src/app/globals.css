@@ -1,16 +1,70 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f8f5f0;
+  --background: #f4eee4;
   --foreground: #111111;
 
-  --paper: #f8f5f0;
+  --paper: #f4eee4;
   --beige: #efe6d8;
   --red: #8b0000;
   --black: #111111;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: var(--paper);
+  position: relative;
   color: var(--foreground);
+  background-color: var(--paper);
+
+  background-image:
+    radial-gradient(circle at 18% 22%, rgba(255,255,255,.22) 0%, transparent 34%),
+    radial-gradient(circle at 82% 18%, rgba(0,0,0,.025) 0%, transparent 42%),
+    radial-gradient(circle at 75% 82%, rgba(255,255,255,.10) 0%, transparent 30%),
+    radial-gradient(circle at 30% 75%, rgba(0,0,0,.02) 0%, transparent 36%);
+
+  background-attachment: fixed;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================================================
+   WSF Luxury Paper Grain
+========================================================= */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+
+  opacity: 0.02;
+
+  background-image:
+    radial-gradient(circle, rgba(0,0,0,.12) 0.45px, transparent 0.6px);
+
+  background-size: 14px 14px;
+}
+
+/* =========================================================
+   WSF Warm Paper Vignette
+========================================================= */
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+
+  background:
+    radial-gradient(
+      circle at center,
+      transparent 55%,
+      rgba(120, 92, 48, 0.035) 100%
+    );
 }

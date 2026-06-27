@@ -9,7 +9,7 @@ export default function Navbar() {
         <a href="/" className="shrink-0">
           <img
             src="/favicon.png"
-            alt="WSF Films"
+            alt="WSF"
             className="h-12 w-auto transition-opacity duration-300 hover:opacity-80"
           />
         </a>

@@ -1,8 +1,8 @@
 export const site = {
-  name: "WSF Films",
+  name: "WSF",
 
   hero: {
-    title: "WSF Films",
+    title: "WSF",
     location: "Portugal · Europe · Worldwide",
   },
 };

@@ -37,7 +37,7 @@ export default function Footer() {
         <Link href="/" className="mb-10">
           <Image
             src="/favicon.png"
-            alt="WSF Films"
+            alt="WSF"
             width={58}
             height={58}
             priority
@@ -121,7 +121,7 @@ export default function Footer() {
         <div className="flex flex-wrap items-center justify-center gap-6 text-center">
 
           <p className="text-[11px] uppercase tracking-[0.25em] text-white/40">
-            © {new Date().getFullYear()} WSF Films
+            © {new Date().getFullYear()} WSF
           </p>
 
           <span className="text-white/20">•</span>

@@ -22,7 +22,7 @@ export default function Hero() {
       {/* Hero Content */}
       <div className="absolute left-10 top-1/2 z-20 max-w-[520px] -translate-y-1/2 md:left-16">
         <p className="text-[14px] leading-7 font-light text-white/90">
-          WSF Films creates cinematic wedding films and timeless photography
+          WSF creates cinematic wedding films and timeless photography
           for couples celebrating in Portugal, Europe, the UAE, Asia, and
           destination weddings worldwide. Every film is thoughtfully crafted
           with elegance, genuine emotion, and authentic storytelling.
