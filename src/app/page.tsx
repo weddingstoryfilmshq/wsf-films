@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/sections/Hero";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -8,8 +9,10 @@ export default function Home() {
 
       <Hero />
 
-      {/* Temporary section */}
-      <section className="h-screen bg-[#F8F5F0]" />
+      {/* Temporary Content */}
+      <section className="min-h-screen bg-[#F8F5F0]" />
+
+      <Footer />
     </main>
   );
 }

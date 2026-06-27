@@ -1,13 +1,37 @@
 export const hero = {
-  title: "WSF Films",
+  // Content
+  title: "",
 
   subtitle: "Portugal · Europe · Worldwide",
 
+  // Media
   video: "/videos/hero.mp4",
 
   overlay: "bg-black/15",
 
-  titleSize: "text-7xl md:text-[9rem]",
+  videoScale: "scale-105",
 
-  maxWidth: "max-w-5xl",
+  // Typography
+  titleSize: "text-6xl sm:text-7xl md:text-8xl lg:text-[9rem]",
+
+  maxWidth: "max-w-6xl",
+
+  subtitleWidth: "max-w-md",
+
+  titleLetterSpacing: "-0.05em",
+
+  titleLineHeight: "0.88",
+
+  // Layout
+  contentTop: "pt-[28vh] md:pt-[22vh]",
+
+  contentPadding: "px-8 md:px-20",
+
+  // Animation
+  titleDelay: 0.6,
+
+  subtitleDelay: 1,
+
+  // Scroll Indicator
+  showScrollIndicator: true,
 };

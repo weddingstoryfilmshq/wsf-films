@@ -1,5 +1,6 @@
 import { hero } from "@/data/hero";
-import FadeIn from "@/components/animations/FadeIn";
+import ScrollIndicator from "@/components/ScrollIndicator";
+import HeroDestinations from "@/components/HeroDestinations";
 
 export default function Hero() {
   return (
@@ -10,7 +11,7 @@ export default function Hero() {
         muted
         loop
         playsInline
-        className="absolute inset-0 h-full w-full object-cover"
+        className={`absolute inset-0 h-full w-full object-cover ${hero.videoScale}`}
       >
         <source src={hero.video} type="video/mp4" />
       </video>
@@ -18,25 +19,21 @@ export default function Hero() {
       {/* Overlay */}
       <div className={`absolute inset-0 ${hero.overlay}`} />
 
-      {/* Content */}
-      <div className="relative z-10 flex h-full items-center px-8 md:px-20">
-        <div>
-          <FadeIn delay={0.6}>
-            <h1
-              className="max-w-4xl text-6xl leading-[0.9] text-white md:text-8xl"
-              style={{ fontFamily: "var(--font-heading)" }}
-            >
-              {hero.title}
-            </h1>
-          </FadeIn>
-
-          <FadeIn delay={1}>
-            <p className="mt-5 text-sm uppercase tracking-[0.3em] text-white/80">
-              {hero.subtitle}
-            </p>
-          </FadeIn>
-        </div>
+      {/* Hero Content */}
+      <div className="absolute left-10 top-1/2 z-20 max-w-[520px] -translate-y-1/2 md:left-16">
+        <p className="text-[14px] leading-7 font-light text-white/90">
+          WSF Films creates cinematic wedding films and timeless photography
+          for couples celebrating in Portugal, Europe, the UAE, Asia, and
+          destination weddings worldwide. Every film is thoughtfully crafted
+          with elegance, genuine emotion, and authentic storytelling.
+        </p>
       </div>
+
+      {/* Destination Buttons */}
+      <HeroDestinations />
+
+      {/* Scroll Indicator */}
+      {hero.showScrollIndicator && <ScrollIndicator />}
     </section>
   );
 }
